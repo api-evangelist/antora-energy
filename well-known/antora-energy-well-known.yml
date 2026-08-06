@@ -1,0 +1,97 @@
+generated: '2026-08-06'
+method: probed
+source: live GET probes of /.well-known/* and common contract paths
+summary: >-
+  No .well-known document of any kind is served by Antora Energy. Every path below
+  returned a real HTTP 404 on both the marketing host (www.antora.com) and the
+  authenticated application host (app.antora.com). A control probe of a known-bad
+  path returned 404 on both hosts, confirming these are genuine 404s and not a
+  single-page-app catch-all answering 200 for everything.
+hosts:
+- host: https://www.antora.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://app.antora.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+contract_paths_probed:
+- host: https://www.antora.com
+  paths:
+  - path: /openapi.json
+    status: 404
+  - path: /openapi.yaml
+    status: 404
+  - path: /swagger.json
+    status: 404
+  - path: /api-docs
+    status: 404
+  - path: /docs
+    status: 404
+  - path: /redoc
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /robots.txt
+    status: 200
+  - path: /sitemap.xml
+    status: 200
+- host: https://app.antora.com
+  paths:
+  - path: /openapi.json
+    status: 404
+  - path: /swagger.json
+    status: 404
+  - path: /api
+    status: 404
+  - path: /api/v1
+    status: 404
+  - path: /graphql
+    status: 404
+  - path: /docs
+    status: 404
+  - path: /llms.txt
+    status: 404
+controls:
+- url: https://www.antora.com/definitely-not-a-real-path-zzz9
+  status: 404
+  note: known-bad control path; confirms www 404s are real
+- url: https://app.antora.com/definitely-not-a-real-path-zzz9
+  status: 404
+  note: known-bad control path; confirms app 404s are real
+subdomains_resolved:
+- host: app.antora.com
+  resolves: true
+  note: 'Insight, an authenticated Next.js dashboard for POET and Antora stakeholders'
+- host: api.antora.com
+  resolves: false
+- host: developers.antora.com
+  resolves: false
+- host: docs.antora.com
+  resolves: false
+- host: portal.antora.com
+  resolves: false
+- host: status.antora.com
+  resolves: false
+- host: dashboard.antora.com
+  resolves: false
+result: none
