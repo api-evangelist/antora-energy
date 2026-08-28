@@ -17,6 +17,17 @@ description: 'Antora Energy is a San Jose, California clean-energy hardware comp
   it publishes no developer program, no public API, no SDK and no machine-readable API
   contract, and its only public software surface is Insight, an authenticated steam and
   power optimization dashboard for named project stakeholders.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.antora.com/android-chrome-512x512.png
 url: https://raw.githubusercontent.com/api-evangelist/antora-energy/refs/heads/main/apis.yml
 x-type: company
