@@ -64,5 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Antora Energy is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/antora-energy_stock/
+Antora Energy is a San Jose, California clean-energy hardware company founded by Justin Briggs, Andrew Ponec and David Bierman that designs, manufactures and deploys factory-built thermal batteries for heavy industry, data centers and the grid. Antora's system resistively heats blocks of solid carbon to temperatures up to 2,400C when electricity is cheapest, stores that energy for multiple days in a compact modular unit, and discharges it around the clock as radiant heat delivered directly to industrial processes or paired with off-the-shelf steam turbine equipment for firm power; the company also develops thermophotovoltaic (TPV) heat-to-power cells at what it describes as the world's largest TPV manufacturing line. Its HeatCore product delivers heat up to 375C at 300 kW-thermal per module, and its power block is rated at 50 MW-electric. Antora's first giga-scale deployment, Project Big Stone, is a 5 GWh system of more than 200 thermal batteries at POET's bioprocessing plant in Big Stone City, South Dakota, built from empty lot to energy delivery in under twelve months. The company closed a $550 million Series C in 2026. Antora sells energy hardware and long-term energy offtake rather than software: it publishes no developer program, no public API, no SDK and no machine-readable API contract, and its only public software surface is Insight, an authenticated steam and power optimization dashboard for named project stakeholders.
+
+**Areas:** Company · Energy · Clean Energy · Thermal Energy Storage · Energy Storage · Industrial Heat · Thermophotovoltaics · Manufacturing · Data Center · Decarbonization · Climate Tech · California
+
+## Antora Energy on APIs.io
+
+Everything profiled for Antora Energy is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/antora-energy/](https://apis.io/providers/antora-energy/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Antora Energy Domain Security](https://apis.io/security/antora-energy/antora-energy-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.antora.com/)
+- [Blog](https://www.antora.com/insights)
+- [Terms of service](https://www.antora.com/terms)
+- [Privacy policy](https://www.antora.com/privacy)
+
+## API Evangelist rating
+
+**Kin Score 9.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 49.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.5** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/antora-energy/](https://apis.io/providers/antora-energy/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Antora Energy: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/antora-energy/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
